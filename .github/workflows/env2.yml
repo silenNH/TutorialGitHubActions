@@ -13,6 +13,7 @@ jobs:
         run: |
            pwd
            ls -a
+           git init
            git config user.email "user@example.com"
            git config user.name "User Name"
            git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
