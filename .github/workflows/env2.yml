@@ -13,18 +13,13 @@ jobs:
         run: |
            pwd
            ls -a
-           git init
            git config user.email "user@example.com"
            git config user.name "User Name"
            git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-           git fetch
-           git branch --set-upstream-to=main
-           git pull
-           ls -a
-           echo $RANDOM >> random.txt
-           ls -a
-           git add -A
-           git commit -m"Random file"
+           git checkout main
+           echo "foo" >> file.txt
+           git add file.txt
+           git commit -m "Some commit message"
            git push origin main
       - name: Create issue using REST API
         run: |
