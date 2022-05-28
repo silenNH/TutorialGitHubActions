@@ -73,4 +73,4 @@ jobs:
           echo "WF_ENV: ${WF_ENV}"
           echo "JOB_ENV: ${JOB_ENV}"
           echo "STEP_ENV: ${STEP_ENV}"
-          echo"Secret GITHUB_Token" ${{ secrets.GITHUB_TOKEN }}
+          echo "Secret GITHUB_Token" ${{ secrets.GITHUB_TOKEN }}
