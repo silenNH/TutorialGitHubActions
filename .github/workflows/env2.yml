@@ -14,9 +14,7 @@ jobs:
            pwd
            ls -a
            git init
-           git remote add origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git"
-           git config --global user.email "my-bot@bot.com"
-           git config --global user.name "my-bot"
+          
            git fetch
            git checkout main
            git branch --set-upstream-to=origin/main
@@ -27,6 +25,20 @@ jobs:
            git add -A
            git commit -m"Random file"
            git push
+           
+           git config user.email "user@example.com"
+           git config user.name "User Name"
+           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+           git fetch
+           git checkout main
+           git branch --set-upstream-to=origin/main
+           git pull
+           ls -a
+           echo $RANDOM >> random.txt
+           ls -a
+           git add -A
+           git commit -m"Random file"
+           git push origin main
       - name: Create issue using REST API
         run: |
           curl --request POST \
