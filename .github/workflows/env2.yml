@@ -16,6 +16,7 @@ jobs:
            git init
            git config user.email "user@example.com"
            git config user.name "User Name"
+           git config --global init.defaultBranch main
            git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
            git checkout main
            echo "foo" >> file.txt
