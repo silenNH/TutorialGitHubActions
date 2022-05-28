@@ -27,6 +27,7 @@ jobs:
           ls -a 
           git add -A 
           git commit -m"Add_a_File_via_GitActions"
+          git push
           
       - name: Create issue using REST API
         run: |
