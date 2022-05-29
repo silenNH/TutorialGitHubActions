@@ -17,6 +17,7 @@ jobs:
           echo $RANDOM >> random.txt
           git config --global user.name 'silenNH'
           git config --global user.email 'nielshumbeck91@googlemail.com'
+          git add -A
           git commit -am "Automated report"
           git push
           
