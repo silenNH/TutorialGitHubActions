@@ -8,17 +8,17 @@ jobs:
     runs-on: ubuntu-latest 
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Create report file
-        run: date +%s > report1.txt
-      - name: Commit report
-        run: |
-          echo $RANDOM >> random1.txt
-          git config --global user.name 'silenNH'
-          git config --global user.email 'nielshumbeck91@googlemail.com'
-          git add -A
-          git commit -am "Automated report"
-          git push
+      # - uses: actions/checkout@v2
+      # - name: Create report file
+      #  run: date +%s > report1.txt
+      # - name: Commit report
+      #  run: |
+      #    echo $RANDOM >> random1.txt
+      #    git config --global user.name 'silenNH'
+      #    git config --global user.email 'nielshumbeck91@googlemail.com'
+      #    git add -A
+      #    git commit -am "Automated report"
+      #    git push
           
       - name: Push a random file
         run: |
