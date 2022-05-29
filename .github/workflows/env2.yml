@@ -21,7 +21,6 @@ jobs:
           git commit -am "Automated report"
           git push
           
-          
       - name: Push a random file
         run: |
            pwd
