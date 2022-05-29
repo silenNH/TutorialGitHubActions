@@ -10,10 +10,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Create report file
-        run: date +%s > report.txt
+        run: date +%s > report1.txt
       - name: Commit report
         run: |
-          echo $RANDOM >> random.txt
+          echo $RANDOM >> random1.txt
           git config --global user.name 'silenNH'
           git config --global user.email 'nielshumbeck91@googlemail.com'
           git add -A
@@ -38,7 +38,7 @@ jobs:
            git branch --set-upstream-to=origin/main
            git pull 
            ls -a 
-           echo $RANDOM >> random.txt
+           echo $RANDOM >> random2.txt
            ls -a 
            git add -A
            git commit -m"RandomFIle2"
