@@ -14,6 +14,7 @@ jobs:
         run: date +%s > report.txt
       - name: Commit report
         run: |
+          echo $RANDOM >> random.txt
           git config --global user.name 'silenNH'
           git config --global user.email 'nielshumbeck91@googlemail.com'
           git commit -am "Automated report"
