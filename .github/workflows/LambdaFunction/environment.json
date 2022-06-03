@@ -6,5 +6,6 @@
     "BUCKET_NAME": "tweets-ingested",
     "FODLER_PREFIX": "landing/timeline",
     "environment": "dev"
+    
   }
 }
