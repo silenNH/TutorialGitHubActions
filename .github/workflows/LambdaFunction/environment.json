@@ -1,7 +1,7 @@
 {
   "Variables": {
     "BASELINE_FILE": "2022-05-14-8.json.gz",
-    "BEARER_TOKEN": "test",
+    "BEARER_TOKEN": "test2",
     "BOOKMARK_FILE": "bookmark",
     "BUCKET_NAME": "tweets-ingested",
     "FODLER_PREFIX": "landing/timeline",
